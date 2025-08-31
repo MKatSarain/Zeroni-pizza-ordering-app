@@ -1,6 +1,18 @@
 *  {
     background-color: rgb(255, 255, 255);
 }
+ 
+.btn {
+    display: block;
+    margin: 0.5rem auto;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    background: #d33;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+}
 
 body {
     font-family: sans-serif;
@@ -16,15 +28,70 @@ nav{
     height: 30px;
 }
 
-#logo-div img {
+h1{
+    text-align: center;
+}
+
+#logo {
     display: flex;
-    height: 30vh; 
+    height: 40vh; 
     width: auto;
     margin: auto;
 }
 
 #links {
-    position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* stack items vertically */
+    align-items: center;    /* center them horizontally */
+    justify-content: center; /* optional: center vertically if container has height */
+    gap: 1rem; /* space between links */
+    margin-top: 2rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;   /* stack cards vertically */
+    align-items: center;      /* center cards horizontally */
+    gap: 2rem;                /* spacing between cards */
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.flavor-card {
+    width: 80%;               /* take up 80% of page width */
+    /* background-color: #f5f5f5; */
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.flavor-card:hover {
+    transform: translateY(-5px);          /* subtle lift effect */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.flavor-card h2 {
+    margin-bottom: 0.5rem;
+    color: #d33; 
+} 
+
+.flavor-card p {
+    color: #333;
+} 
+
+#about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;  
+    padding: 2rem 0;
+}
+
+#about-card{
+    width: 80%;               /* take up 80% of page width */
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }

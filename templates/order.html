@@ -1,1 +1,39 @@
-<h1>Order</h1>
+{% extends "base.html" %}
+
+{% block title %}Order | Zeroni's Pizza{% endblock %}
+
+{% block content %}
+    <h1>Choose your Zeroni</h1>
+
+    <div class="cards-container">
+        <div class="flavor-card">
+            <h2>Cheese Please</h2>
+            <p>Classic Italian crust with crushed tomato sauce and a secret blend of 4 cheeses</p>
+        </div>
+        <div class="flavor-card">
+            <h2>Zeroni's Pepperoni</h2>
+            <p>Classic Italian crust with crushed tomato sauce, fresh mozz & parm, and house-cured pepperoni sausage</p>
+        </div>
+        <div class="flavor-card">
+            <h2>Buy Me a Margherita First</h2>
+            <p>Classic Italian crust with crushed tomato sauce, mini mozz, parmesan, and fresh basil</p>
+        </div>
+        <div class="flavor-card">
+            <h2>The Big Z</h2>
+            <p>Classic Italian crust with crushed tomato sauce, mozz & parm, pineapple chunks, and smoked canadian ham</p>
+        </div>
+        <div class="flavor-card">
+            <h2>Veg Out</h2>
+            <p>Classic Italian crust with crushed tomato sauce, mozz & parm, crushed garlic, green bell pepper, red onion, mushrooms, and marinated artichoke hearts</p>
+        </div>
+        <div class="flavor-card">
+            <h2>Meat Me Outside</h2>
+            <p>Classic Italian crust with crushed tomato sauce, mozz & parm, house-cured pepperoni, meatballs, italian sausage, canadian bacon, and gabagool</p>
+        </div>
+        <div class="flavor-card">
+            <h2>Zeroni's Combo</h2>
+            <p>Classic Italian crust with crushed tomato sauce, mozz & parm, green bell pepper, mushrooms, italian sausage, and house-cured pepperoni</p>
+        </div>
+    </div>
+
+{% endblock %}
