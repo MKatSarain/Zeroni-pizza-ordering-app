@@ -1,4 +1,4 @@
-# Zeroni's Pizza Ordering App 🍕
+# Zeroni's Pizza Ordering App 🍕 (Work in progress - Incomplete)
 
 A full-stack web application built with **Flask**, designed to provide a simple online pizza ordering experience.  
 The app demonstrates clean backend routing, session-based cart management, and responsive frontend design.
