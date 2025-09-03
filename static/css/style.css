@@ -1,3 +1,4 @@
+/* BASE CSS */
 *  {
     background-color: rgb(255, 255, 255);
 }
@@ -39,15 +40,18 @@ h1{
     margin: auto;
 }
 
+/* HOMEPAGE */
 #links {
     display: flex;
     flex-direction: column; /* stack items vertically */
     align-items: center;    /* center them horizontally */
-    justify-content: center; /* optional: center vertically if container has height */
+    justify-content: center; 
     gap: 1rem; /* space between links */
     margin-top: 2rem;
 }
 
+
+/* ORDER PAGE */
 .cards-container {
     display: flex;
     flex-direction: column;   /* stack cards vertically */
@@ -58,8 +62,7 @@ h1{
 }
 
 .flavor-card {
-    width: 80%;               /* take up 80% of page width */
-    /* background-color: #f5f5f5; */
+    width: 80%;           
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -67,7 +70,7 @@ h1{
 }
 
 .flavor-card:hover {
-    transform: translateY(-5px);          /* subtle lift effect */
+    transform: translateY(-5px); 
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
@@ -80,6 +83,92 @@ h1{
     color: #333;
 } 
 
+#cart-btn {
+    color: aliceblue;                 
+    background-color: #d32f2f;         
+    border-radius: 12px;               
+    padding: 0.75rem 1.5rem;           
+    font-weight: bold;                 
+    border: none;                       
+    cursor: pointer;                    
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+#cart-btn:hover {
+    background-color: #b71c1c;      
+    transform: translateY(-2px);    
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+#cart-container {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+}
+
+#cart-icon {
+    background: #ffffff;
+    border: 3px solid #d33;
+    border-radius: 80%;
+    padding: 0.5rem 0.75rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#cart-box {
+    background: white;
+    border: 5px dotted #d90c0c;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    width: 400px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.25rem 0;
+}
+
+.cart-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cart-controls button {
+    background-color: #d32f2f;   /* pizza red */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 28px;
+    height: 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.cart-controls button:hover {
+    background-color: #b71c1c;   /* darker red on hover */
+}
+
+.cart-controls span {
+    min-width: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* ABOUT PAGE */
 #about-container {
     display: flex;
     flex-direction: column;
@@ -89,9 +178,32 @@ h1{
 }
 
 #about-card{
-    width: 80%;               /* take up 80% of page width */
+    width: 80%;             
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+/* FAQ PAGE */
+#faq {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.faq-item {
+    margin-bottom: 1.5rem;
+}
+
+.faq-item h3 {
+    color: #d32f2f; 
+    margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+    margin: 0;
+    line-height: 1.6;
 }

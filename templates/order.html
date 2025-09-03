@@ -5,34 +5,53 @@
 {% block content %}
     <h1>Choose your Zeroni</h1>
 
+   <div id="cart-container">
+        <button id="cart-icon">🛒 <span id="cart-count">0</span></button>
+        
+        <div id="cart-box" class="hidden">
+            <div id="cart-items"></div>
+            <hr>
+            <p><strong>Total: $<span id="cart-total">0.00</span></strong></p>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
     <div class="cards-container">
         <div class="flavor-card">
-            <h2>Cheese Please</h2>
+            <h2>Cheese Please - $9</h2>
             <p>Classic Italian crust with crushed tomato sauce and a secret blend of 4 cheeses</p>
+            <button id="cart-btn" onclick="addToCart('Cheese Please', 9)">Box it up</button>
+            <!-- add a +/- with a number next to the box it up button -->
         </div>
         <div class="flavor-card">
-            <h2>Zeroni's Pepperoni</h2>
+            <h2>Zeroni's Pepperoni - $10</h2>
             <p>Classic Italian crust with crushed tomato sauce, fresh mozz & parm, and house-cured pepperoni sausage</p>
+            <button id="cart-btn" onclick="addToCart('Zeroni\'s Pepperoni', 10)">Box it up</button>
         </div>
         <div class="flavor-card">
-            <h2>Buy Me a Margherita First</h2>
+            <h2>Buy Me a Margherita First - $9</h2>
             <p>Classic Italian crust with crushed tomato sauce, mini mozz, parmesan, and fresh basil</p>
+            <button id="cart-btn" onclick="addToCart('Buy Me a Margherita First', 9)">Box it up</button>
         </div>
         <div class="flavor-card">
-            <h2>The Big Z</h2>
+            <h2>The Big Z - $12</h2>
             <p>Classic Italian crust with crushed tomato sauce, mozz & parm, pineapple chunks, and smoked canadian ham</p>
+            <button id="cart-btn" onclick="addToCart('The Big Z', 12)">Box it up</button>
         </div>
         <div class="flavor-card">
-            <h2>Veg Out</h2>
+            <h2>Veg Out - $12</h2>
             <p>Classic Italian crust with crushed tomato sauce, mozz & parm, crushed garlic, green bell pepper, red onion, mushrooms, and marinated artichoke hearts</p>
+            <button id="cart-btn" onclick="addToCart('Veg Out', 12)">Box it up</button>
         </div>
         <div class="flavor-card">
-            <h2>Meat Me Outside</h2>
+            <h2>Meat Me Outside - $14</h2>
             <p>Classic Italian crust with crushed tomato sauce, mozz & parm, house-cured pepperoni, meatballs, italian sausage, canadian bacon, and gabagool</p>
+            <button id="cart-btn" onclick="addToCart('Meat Me Outside', 14)">Box it up</button>
         </div>
         <div class="flavor-card">
-            <h2>Zeroni's Combo</h2>
+            <h2>Zeroni's Combo - $14</h2>
             <p>Classic Italian crust with crushed tomato sauce, mozz & parm, green bell pepper, mushrooms, italian sausage, and house-cured pepperoni</p>
+            <button id="cart-btn" onclick="addToCart('Zeroni\'s Combo', 14)">Box it up</button>
         </div>
     </div>
 

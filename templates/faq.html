@@ -1,1 +1,49 @@
-<h1> FAQ </h1>
+{% extends "base.html" %}
+
+{% block title %}FAQ | Zeroni's Pizza{% endblock %}
+
+{% block content %}
+   <section id="faq">
+        <h1>Frequently Asked Questions (FAQ) 🍕</h1>
+
+        <div class="faq-item">
+            <h3>Q: How do I place an order online?</h3>
+            <p>A: Just click the <strong>Order Now</strong> button on the homepage, select your favorite pizzas and sides, and add them to your cart. Once you’re ready, checkout is quick and easy!</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q: Do you offer delivery or pickup?</h3>
+            <p>A: Both! You can choose <strong>pickup</strong> if you want your pizza hot and fresh straight from our oven, or <strong>delivery</strong> if you’d rather stay cozy at home.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q: How long will my order take?</h3>
+            <p>A: Most orders are ready in about <strong>20–30 minutes</strong>, depending on size and time of day. Delivery times may vary based on distance.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q: Can I customize my pizza?</h3>
+            <p>A: Absolutely! You can add or remove toppings, choose your crust style, and even make half-and-half pizzas. Zero (our mascot pup 🐾) approves of creativity.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q: Do you have gluten-free or vegan options?</h3>
+            <p>A: Yes! We offer gluten-free crusts and vegan cheese so everyone can enjoy a slice of Zeroni’s.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q: What if I have an allergy?</h3>
+            <p>A: Please let us know at checkout in the <strong>special instructions</strong> section. While we do our best, we can’t guarantee a completely allergen-free kitchen.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q: Can I order in advance?</h3>
+            <p>A: Yes, you can schedule your order for later in the day—perfect for parties, study nights, or game day.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q: What payment methods do you accept?</h3>
+            <p>A: We accept all major credit cards, debit cards, and Apple/Google Pay. Zero says “cash is cool too” for pickup orders.</p>
+        </div>
+    </section>
+{% endblock %}
